@@ -6,6 +6,10 @@ COPY pip_requirements.txt .
 
 RUN pip install -r pip_requirements.txt
 
-COPY api/ src/ network.py .
+COPY api/ ./api
+
+COPY src/ ./src
+
+COPY network.py .
 
 CMD [ "python", "./api.py" ]
