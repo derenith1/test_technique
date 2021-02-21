@@ -12,4 +12,4 @@ COPY src/ ./src
 
 COPY network.py .
 
-CMD [ "python", "./api.py" ]
+CMD [ "python", "./api/api.py" ]
